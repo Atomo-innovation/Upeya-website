@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Internet of Things</title>
+  <g fill="none" stroke="#177c8c" stroke-width="4" stroke-linecap="round">
+    <path d="M17 12c8-8 22-8 30 0m-24 6c5-5 13-5 18 0"/>
+    <path d="m25 39-15 13m29-13 15 13"/>
+  </g>
+  <rect x="21" y="24" width="22" height="20" rx="6" fill="#11586c"/>
+  <circle cx="32" cy="34" r="4" fill="#b6f4eb"/>
+  <g fill="#84ded1" stroke="#11586c" stroke-width="3.5">
+    <circle cx="10" cy="52" r="6"/>
+    <circle cx="54" cy="52" r="6"/>
+  </g>
+</svg>

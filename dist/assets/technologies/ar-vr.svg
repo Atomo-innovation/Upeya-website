@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>AR and VR headset</title>
+  <path d="M23 54v-6c0-15 13-25 29-25h24c16 0 29 10 29 25v6" fill="none" stroke="#40867a" stroke-width="8"/>
+  <rect x="3" y="59" width="122" height="23" rx="8" fill="#40867a"/>
+  <path d="M28 42h72c10 0 17 7 17 17v26c0 11-7 18-18 18H84c-8 0-10-5-14-12-2-3-4-5-6-5s-4 2-6 5c-4 7-6 12-14 12H29c-11 0-18-7-18-18V59c0-10 7-17 17-17Z" fill="#125955"/>
+  <path d="M31 52h66c6 0 10 4 10 10v18c0 6-4 10-10 10H85c-4 0-6-3-9-8-3-5-7-8-12-8s-9 3-12 8c-3 5-5 8-9 8H31c-6 0-10-4-10-10V62c0-6 4-10 10-10Z" fill="#8cdecb"/>
+  <path d="m32 69 9-9m1 14 14-14" fill="none" stroke="#e5fff6" stroke-width="5" stroke-linecap="round"/>
+</svg>

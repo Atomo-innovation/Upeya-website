@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Artificial intelligence</title>
+  <g fill="none" stroke="#66549b" stroke-width="3.5" stroke-linecap="round">
+    <path d="M20 4v8m12-8v8m12-8v8M20 52v8m12-8v8m12-8v8"/>
+    <path d="M4 20h8m-8 12h8m-8 12h8M52 20h8m-8 12h8m-8 12h8"/>
+  </g>
+  <rect x="10" y="10" width="44" height="44" rx="9" fill="#514187"/>
+  <rect x="16" y="16" width="32" height="32" rx="5" fill="#eee9ff"/>
+  <g fill="none" stroke="#514187" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m21 39 6-15h1l6 15m-11-4.5h9"/>
+    <path d="M40 24v15"/>
+  </g>
+</svg>

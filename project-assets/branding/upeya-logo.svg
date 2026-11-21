@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 164.5 40.5" role="img" aria-labelledby="title">
+  <title id="title">Upeya</title>
+  <!-- The two named views let the same artwork stack or sit side by side in the banner. -->
+  <view id="mark" viewBox="-4 -4 47 47"/>
+  <view id="mark-still" viewBox="-4 -4 47 47"/>
+  <view id="wordmark" viewBox="49 5.5 114.5 29.5"/>
+  <view id="wordmark-still" viewBox="49 5.5 114.5 29.5"/>
+  <defs>
+    <linearGradient id="forest" x2="1" y2=".45" gradientUnits="objectBoundingBox">
+      <stop stop-color="#204b2d"/><stop offset="1" stop-color="#102719"/>
+    </linearGradient>
+    <linearGradient id="jade" x2="1" y2=".7" gradientUnits="objectBoundingBox">
+      <stop stop-color="#067a42"/><stop offset="1" stop-color="#00a65b"/>
+    </linearGradient>
+    <linearGradient id="pearl" x2=".8" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#f5fff6"/><stop offset="1" stop-color="#bfe6c8"/>
+    </linearGradient>
+    <linearGradient id="mint" x2="1" y2=".65" gradientUnits="objectBoundingBox">
+      <stop stop-color="#99ffc0"/><stop offset="1" stop-color="#5be795"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .artwork { --outer: url(#forest); --inner: url(#jade); --dot: #18211c; --type: #101511; }
+    view:target ~ .artwork { --outer: url(#pearl); --inner: url(#mint); --dot: #123727; --type: #f1fff4; }
+    .outer { fill: var(--outer); }
+    .inner { fill: var(--inner); }
+    .dot { fill: var(--dot); }
+    .lettering { fill: var(--type); fill-rule: evenodd; }
+    .guides { opacity: 0; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      #mark:target ~ .artwork .guides { animation: guides 1.35s ease-out both; }
+      #mark:target ~ .artwork .corner,
+      #wordmark:target ~ .artwork .letter {
+        stroke: #effff2;
+        stroke-width: .4;
+        stroke-linejoin: round;
+        stroke-dasharray: 1;
+        animation: trace 1s cubic-bezier(.35, 0, .2, 1) var(--delay, 0s) both;
+      }
+      #mark:target ~ .artwork .inner { --delay: .18s; }
+      #mark:target ~ .artwork .dot {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: place-dot .4s ease-out .65s both;
+      }
+      #wordmark:target ~ .artwork .letter { animation-duration: .83s; }
+    }
+    @keyframes trace {
+      0% { stroke-dashoffset: 1; stroke-opacity: 1; fill-opacity: .15; }
+      52% { fill-opacity: .2; }
+      76% { stroke-dashoffset: 0; stroke-opacity: 1; }
+      100% { stroke-dashoffset: 0; stroke-opacity: 0; fill-opacity: 1; }
+    }
+    @keyframes guides {
+      0% { opacity: .08; }
+      20%, 64% { opacity: .48; }
+      100% { opacity: 0; }
+    }
+    @keyframes place-dot {
+      from { opacity: .15; transform: scale(.3); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+  <g class="artwork">
+    <g class="guides" fill="none" stroke="#d4f5dc" stroke-width=".14">
+      <path d="M-4 0H42 M-4 13.8H42 M-4 36.7H42 M0 -4V42 M13.9 -4V42 M36.7 -4V42"/>
+      <circle cx="34.6" cy="34.5" r="5.3"/>
+    </g>
+    <path class="corner outer" pathLength="1"
+          d="M0 0H36.7V7.1C36.7 11.1 33.9 13.8 29.9 13.8H13.9V36.7H4C1.5 36.7 0 35.2 0 32.7Z"/>
+    <path class="corner inner" pathLength="1"
+          d="M18.4 20.5Q18.4 18.3 20.6 18.3H36.7V23.3C36.7 26.1 34.8 27.8 32.2 27.8H27.7V36.7H22.2Q18.4 36.7 18.4 32.9Z"/>
+    <circle class="dot" cx="34.6" cy="34.5" r="3.85"/>
+    <g class="lettering" transform="translate(50 6.2)">
+      <path class="letter" pathLength="1" style="--delay:.45s"
+            d="M0 .3H3.4V17.35C3.4 22.25 6 24.5 10.6 24.5S17.85 22.2 17.85 17.35V.3H21.15V17.55C21.15 24.1 17.35 27.7 10.55 27.7S0 24.15 0 17.55Z"/>
+      <path class="letter" pathLength="1" style="--delay:.53s"
+            d="M29.1 .3H37.25C42.8 .3 46.35 3.15 46.35 8.65S42.65 17.25 37.35 17.25H32.5V27H29.1ZM32.5 3.3V14.25H37C40.7 14.25 42.95 12.25 42.95 8.7S40.9 3.3 37.1 3.3Z"/>
+      <path class="letter" pathLength="1" style="--delay:.61s"
+            d="M51.45 .3H66V3.3H54.85V12.05H63.9V15H54.85V24H66.95V27H51.45Z"/>
+      <path class="letter" pathLength="1" style="--delay:.69s"
+            d="M69.65 .3H73.6L79.85 11.8L86.85 .3H90.6L81.5 15V27H78.1V15Z"/>
+      <path class="letter" pathLength="1" style="--delay:.77s"
+            d="M98.15 .3H101.95L112.1 27H108.45L105.35 18.65H94.95L91.85 27H88.3ZM96.05 15.65H104.25L100.1 4.05Z"/>
+    </g>
+  </g>
+</svg>
