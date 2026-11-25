@@ -18,7 +18,6 @@ A static website for Upeya Electronics LLP, presenting its software and electron
 | `dist/project-assets/references/` | Design reference screenshot used while preparing the site. |
 | `.openai/hosting.json` | Hosting configuration. It sets `dist/` as the static site directory. |
 | `.gitignore` | Keeps local environment files, credentials folders, dependencies, and operating-system files out of Git. |
-| `dist/.gitignore` | Excludes the local `.vercel` folder from the deployed site directory. |
 
 ## Preview locally
 
